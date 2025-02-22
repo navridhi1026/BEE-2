@@ -1,0 +1,13 @@
+<%- include('header') %>
+
+<div class="container">
+    <h1>All Tasks</h1>
+    <ul>
+        <% tasks.forEach(task => { %>
+            <li><strong><%= task.title %></strong>: <%= task.description %></li>
+        <% }) %>
+    </ul>
+    <a href="/add">Add a New Task</a>
+</div>
+
+<%- include('footer') %>
